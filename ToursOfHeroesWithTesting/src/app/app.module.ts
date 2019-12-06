@@ -15,6 +15,9 @@ import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
 import { JokeComponent } from './joke/joke.component';
+import { JokeCardItemComponent } from './jokes/joke-card-item/joke-card-item.component';
+import { JokeCardListComponent } from './jokes/joke-card-list/joke-card-list.component';
+import {JokesModule} from './jokes/jokes.module';
 
 @NgModule({
   imports: [
@@ -22,6 +25,7 @@ import { JokeComponent } from './joke/joke.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    JokesModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
@@ -37,7 +41,9 @@ import { JokeComponent } from './joke/joke.component';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    JokeComponent
+    JokeComponent,
+    // JokeCardItemComponent,
+    // JokeCardListComponent
   ],
   bootstrap: [ AppComponent ]
 })
