@@ -10,6 +10,8 @@ References are for testing:
 https://www.youtube.com/watch?v=S0LxogWSMzE
 https://www.youtube.com/watch?v=lTKhB6uAmno
 https://github.com/LMFinney/toh-pt6_20190108
+
+https://stackblitz.com/edit/chuck-norris-angular-jokes
 ```
 
 
