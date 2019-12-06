@@ -7,7 +7,7 @@ import {JokeService} from './joke.service';
   styleUrls: ['./joke.component.css']
 })
 export class JokeComponent implements OnInit {
-  joke: String;
+  joke: String = "This is my first joke";
   title = 'Chuck Noris Jokes';
 
   constructor(private jokeService: JokeService) { }
