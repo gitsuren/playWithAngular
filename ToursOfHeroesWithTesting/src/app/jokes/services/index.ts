@@ -1,1 +1,1 @@
-export * from './joke.service';
+export * from './jokes.service';

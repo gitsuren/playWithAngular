@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from 'rxjs';
 import {Joke} from '../models';
-import {JokeService} from '../services';
+import {JokesService} from '../services';
 
 @Component({
   selector: 'app-joke-card-list',
@@ -12,14 +12,14 @@ export class JokeCardListComponent implements OnInit {
 
   jokes$: Observable<Joke[]>;
 
-  constructor(private jokeService: JokeService) { }
+  constructor(private jokesService: JokesService) { }
 
   ngOnInit() {
-    this.jokes$ = this.jokeService.getJokes();
+    this.jokes$ = this.jokesService.getJokes();
   }
 
   refreshJokes() {
-    this.jokes$ = this.jokeService.getJokes();
+    this.jokes$ = this.jokesService.getJokes();
   }
 
 }
